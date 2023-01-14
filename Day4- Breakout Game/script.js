@@ -16,7 +16,7 @@ const ball = {
   y: canvas.height / 2,
   size: 10,
   speed: 4,
-  dx: 4,
+  dx: 4,s
   dy: -4,
   visible: true
 };
@@ -54,7 +54,7 @@ for (let i = 0; i < brickRowCount; i++) {
 }
 
 // Draw ball on canvas
-function drawBall() {
+function drawBall() { 
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
   ctx.fillStyle = ball.visible ? '#0095dd' : 'transparent';
@@ -195,7 +195,7 @@ function draw() {
   drawPaddle();
   drawScore();
   drawBricks();
-}
+} 
 
 // Update canvas drawing and animation
 function update() {
